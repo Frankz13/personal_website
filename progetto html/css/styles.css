@@ -27,6 +27,61 @@ body{
     background-color: #4b4276;
     padding: 30px 0;
 }
+.wrapper .hero{
+        height: 100%;
+        width: 85%;
+        background-position: center;
+        
+        background-size: cover;
+        position: relative;
+        background-color: pink;
+        float: right;
+        background-image: url("../images/background.jpg");
+}
+ .wrapper .about{
+    height: 100%;
+        width: 85%;
+        background-position: center;
+        
+        background-size: cover;
+        position: relative;
+    background-color: black;
+    float: right;
+
+}
+
+.wrapper .resume{
+    height: 100%;
+    width: 85%;
+    background-position: center;
+    
+    background-size: cover;
+    position: relative;
+background-color: orange;
+float: right;
+}
+
+.wrapper .contact{
+    height: 100%;
+    width: 85%;
+    background-position: center;
+    
+    background-size: cover;
+    position: relative;
+background-color: green;
+float: right;
+}
+
+.wrapper .portfolio{
+    height: 100%;
+    width: 85%;
+    background-position: center;
+    
+    background-size: cover;
+    position: relative;
+background-color: fuchsia;
+float: right;
+}
 
 .wrapper .sidebar h2{
     color: #fff;
