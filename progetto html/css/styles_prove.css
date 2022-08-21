@@ -8,11 +8,7 @@
     font-family:  Arial, Helvetica, sans-serif
 }
     body{
-        background-image: url("../images/background.jpg");
-        background-size: contain;
-        width: 100%;
-        height: 100%;
-        
+       
 }
     
     
@@ -21,7 +17,7 @@
         position: relative;
     }
 
-    .wraper .side_bar{
+    .side_bar{
         position:fixed;
         width: 15%;
         height: 100%;
@@ -29,38 +25,38 @@
         padding: 30px 0;
     }
 
-    .wraper .hero_1{
+     .hero_1{
+       
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-image: url("../images/background.jpg");
+        background-size: cover;
+        position: fixed;
+        
+        float: right;
+    }
+      .hero_2{
        
         height: 100%;
         width: 85%;
         background-position: center;
         
         background-size: cover;
-        position: relative;
-        background-color: transparent;
-        float: right;
-    }
-     .wraper .hero_2{
-       
-        height: 100%;
-        width: 85%;
-        background-position: center;
-        
-        background-size: cover;
-        position: relative;
+        position: static;
         background-color: transparent;
         float: right;
     }
 
-    .wraper .hero_3{
+    .hero_3{
 
         height: 100%;
         width: 85%;
         background-position: center;
         
         background-size: cover;
-        position: relative;
-        background-color: transparent;
+        position: static;
+        background-color: black;
         float: right;
     }
     
@@ -80,4 +76,6 @@
 ::-webkit-scrollbar-thumb:hover{
 background: whitesmoke;
 }
+
+
    

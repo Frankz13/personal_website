@@ -20,16 +20,27 @@
     background-color: #4b4276;
     padding: 30px 0;
 }
-.wrapper .home{
+.wrapper .hero{
         height: 100%;
+        width: 100%;
+        background-position: center;
+        
+        background-size: cover;
+        position: fixed;
+        
+        float: right;
+        background-image: url("../images/background.jpg");
+}
+
+.wrapper .home{
+    height: 100%;
         width: 85%;
         background-position: center;
         
         background-size: cover;
         position: relative;
-        
-        float: right;
-        background-image: url("../images/background.jpg");
+    background-color: transparent;
+    float: right;
 }
  .wrapper .about{
     height: 100%;
@@ -81,6 +92,7 @@ float: right;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+    font-size:1.3vw;
 
 }
 
@@ -131,16 +143,12 @@ float: right;
     border-top-left-radius: 5px;
 
 }
- .wrapper .main_content {
-    width: 100%;
-    margin-left: 250px;
- }
+ 
 
  .profile_picture{
-    width: 150;
-    height: 150;
-    border-radius: 50%;
     
+    border-radius: 50%;
+    max-width: 75%;
    
 }
 .photo_grid_container{
