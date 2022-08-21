@@ -8,31 +8,35 @@
     font-family:  Arial, Helvetica, sans-serif
 }
 
-.wrapper{
-    display: block;
-    position: relative;
-}
 
-.wrapper .sidebar{
+
+.sidebar{
     position: fixed;
     width: 15%;
     height: 100%;
     background-color: #4b4276;
     padding: 30px 0;
+    
+    
+    
 }
-.wrapper .hero{
+
+    
+
+.hero{
         height: 100%;
-        width: 100%;
+        width: 85%;
         background-position: center;
         
         background-size: cover;
         position: fixed;
+        left: 15%;
         
-        float: right;
+        
         background-image: url("../images/background.jpg");
 }
 
-.wrapper .home{
+.home{
     height: 100%;
         width: 85%;
         background-position: center;
@@ -42,7 +46,7 @@
     background-color: transparent;
     float: right;
 }
- .wrapper .about{
+ .about{
     height: 100%;
         width: 85%;
         background-position: center;
@@ -53,8 +57,7 @@
     float: right;
 
 }
-
-.wrapper .resume{
+.resume{
     height: 100%;
     width: 85%;
     background-position: center;
@@ -65,7 +68,7 @@ background-color: orange;
 float: right;
 }
 
-.wrapper .contact{
+.contact{
     height: 100%;
     width: 85%;
     background-position: center;
@@ -76,7 +79,7 @@ background-color: green;
 float: right;
 }
 
-.wrapper .portfolio{
+.portfolio{
     height: 100%;
     width: 85%;
     background-position: center;
@@ -87,7 +90,7 @@ background-color: fuchsia;
 float: right;
 }
 
-.wrapper .sidebar h2{
+.sidebar h2{
     color: #fff;
     text-transform: uppercase;
     text-align: center;
@@ -97,50 +100,48 @@ float: right;
 }
 
 
-.wrapper .sidebar ul li{
+.sidebar ul li{
     padding: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.wrapper .sidebar ul li a{
+.sidebar ul li a{
     color: #bdb8d7;
     display: block;
 }
 
-.wrapper .sidebar ul li:hover{
+ .sidebar ul li:hover{
     background-color: #594f8d;
 }
 
-.wrapper .sidebar ul li:hover a{
+.sidebar ul li:hover a{
     color: #fff;
 }
 
-.wrapper .sidebar .social_media{
+.sidebar .social_media{
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    flex-flow: row;
+    
     
 
 }
 
 
 
-.wrapper .sidebar .social_media a{
+.sidebar .social_media a{
     display: block;
-    width: 30px;
     background: #594f8d;
-    height: 30px;
-    line-height: 30px;
     text-align:center;
     font-size: 30px;
-    
     margin: 0 5px ;
     color: #bdb8d7;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 5px;
+    
+    
 
 }
  
