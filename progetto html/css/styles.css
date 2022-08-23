@@ -8,13 +8,18 @@
     font-family:  Arial, Helvetica, sans-serif
 }
 
+html{
+
+    
+    scroll-behavior:smooth;
+}
 
 /* Everthing about the SideBar--------------------------------------------------*/
 .sidebar{
     position: fixed;
     width: 15%;
     height: 100%;
-    background-color: #4b4276;
+    background-color:black;
     padding: 30px 0;
     
     
@@ -96,6 +101,8 @@
     width: 85%;
     background-position: center;
     background-size: cover;
+    position: relative;
+    float: right;
 
 }
 
@@ -109,22 +116,22 @@
 
 .home{
     
-        position: relative;
+        
     background-color: transparent;
-    float: right;
+    
 }
  .type_1{
    
-        position: relative;
+        
     background-color: lightblue;
-    float: right;
+    
 
 }
 .type_2{
     
-    position: relative;
+    
 background-color: lightskyblue;
-float: right;
+
 }
 
 
@@ -206,3 +213,37 @@ settings the icons better */
 
 /*---------------------------------------------------------------------*/
 }
+
+/*set up the button to go back to the top*/
+.back_to_top {
+    position: fixed;
+    
+    
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #149ddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    
+  }
+  
+  .back_to_top i {
+    font-size: 28px;
+    color: #fff;
+    padding-top: 5 ;
+    padding-left:10;
+    
+  }
+  
+  .back_to_top:hover {
+    background: #2eafec;
+    color: #fff;
+  }
+  
+  .back_to_top.active {
+    visibility: visible;
+    opacity: 1;
+  }
