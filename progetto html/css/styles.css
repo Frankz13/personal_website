@@ -10,37 +10,10 @@
 }
 
 html{
-
-    
-    scroll-behavior: smooth;
-}
- .container .type_about{
-    
-    
-    padding: 5% 15% 5% 15%;
-    
-   
+  scroll-behavior: smooth;
 }
 
-.type_about h3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 30px;
-
-}
-  .type_about .title h2{
-    
-    font-size:  40px;
-    padding-bottom: 10px;
-    font-family: 'Courier New', Courier, monospace;
-
-  }
-  .text
-{
-    line-height: 1.6;
-    padding-bottom: 5%;
-    
-}
-  
+ 
  
   
  
@@ -118,7 +91,30 @@ html{
     
     border-radius: 50%;
     max-width: 75%;
+    
    
+}
+
+.profile_picture_home{
+  border-radius: 50%;
+  max-width: 75%;
+  display: none;
+}
+.move_down{
+  padding-top: 20%;
+}
+h3.home {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  
+  
+}
+.learn_more_picture{
+  border-radius: 50%;
+    max-width: 50%;
+    visibility: visible;
+
 }
 .photo_grid_container{
     display: flex;
@@ -139,54 +135,17 @@ html{
 }
 
 .hero{
-        
-        position: fixed;
-        left: 15%;      
-        
-        background-image: url("../images/background.jpg");
+    position: fixed;
+    left: 15%;    
+    background-image: url("../images/background_1.png");
 }
 
-.home{
-    
-        
-    background-color: transparent;
-    
-}
- .type_about{
-   
-        
-    background-color: white;
-    
+.home{background-color: transparent;}
+.type_about{background-color: white;}
+.type_contact{background-color: white;}
+.type_portfolio{background-color: transparent;}
+.type_resume{background-color: whitesmoke;}
 
-}
-.type_portfolio
-{
-    background-color: white;
-}
-.type_2{
-    
-    
-background-color: whitesmoke;
-
-}
-.coming_soon {
- 
-  font-family: "Courier New", Courier, monospace;  
-  font-size: 28px;
-  
-  
-}
-.coming_soon h1{
-    text-decoration:underline;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 
 
 /* personalized scrollbar*/
@@ -208,6 +167,11 @@ background: #594f8d;}
 
 /* -------------------------------*/
 
+.photo_grid_container_home{
+  visibility: hidden;
+}
+
+/*--------------------------------MEDIA--------------------------------------------------*/
 
 @media (max-width: 55em) {
 /* these instructions are hidding the name, the icons's label and profile picture*/
@@ -216,8 +180,27 @@ background: #594f8d;}
         display: none;
     }
 
+    .photo_grid_container_home{
+      visibility: visible;
+      
+    }
+
     .menu_label{
         visibility: hidden;
+    }
+    .home{
+      color: white;
+    }
+
+    h3.home {
+      display: none;
+      margin-top: auto;
+      padding: 10%;
+    }
+
+    .profile_picture_home{
+      display: block;
+      margin: 0 auto;
     }
    
 /* --------------------------------*/
@@ -242,8 +225,8 @@ background: #594f8d;}
 /*----------------------------------*/
 
 
-/*these instructions are making the side bar more suitable for mobile
-settings the icons better */
+/*these instructions are making the side bar more suitable for mobile and
+ setting the icons in more suitable way */
 .sidebar ul li{
     padding: 15px;
     position: relative;
@@ -251,44 +234,36 @@ settings the icons better */
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-flow: column;
-    
 }
     
 .sidebar ul li a{
     color: #bdb8d7;
     display: block;
     font-size:25px;
-    text-align:center;  
-    
-    
-
+    text-align:center;   
 }
 
 .container .type_about{
-    
-    padding: 5%;
-    
-   
+     padding: 5%;   
 }
 
 
 /*---------------------------------------------------------------------*/
 }
+/*------------------------------------------------end of MEDIA------------------------------*/
+
 
 /*set up the button to go back to the top-------------------------------*/
 .back_to_top {
-    position: fixed;
-    
-    
+    position: fixed;   
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #149ddd;
+    background: #4b4276;
     width: 40px;
     height: 40px;
     border-radius: 50px;
     transition: all 0.4s;
-    
   }
   
   .back_to_top i {
@@ -300,7 +275,7 @@ settings the icons better */
   }
   
   .back_to_top:hover {
-    background: #2eafec;
+    background: #4b4276;
     color: #fff;
   }
   
@@ -378,4 +353,60 @@ settings the icons better */
   }
   
 /*---------------------------------------------------------------------------------------*/
+/* */
+
+
+.container .type_contact{
+  padding: 5% 15% 5% 15%;
+
+}
+.container .type_about{
+    
+    
+  padding: 5% 15% 5% 15%;
   
+ 
+}
+
+.type_about h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+
+}
+ .title h2{
+  
+  font-size:  40px;
+  padding-bottom: 10px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.text
+{
+  line-height: 1.6;
+  padding-bottom: 5%;
+  
+}
+/*----------------------------------------------------------------------------------------*/
+/* coming soon section--------------------------------------------------------------------*/
+
+.coming_soon {
+ 
+  font-family: "Courier New", Courier, monospace;  
+  font-size: 28px;
+  color: white;
+  
+  
+}
+.coming_soon h1{
+    text-decoration:underline;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  /*--------------------------------------------------------------------------------------*/
